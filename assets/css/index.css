@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+:root {
+  --primary-color: rgb(70, 134, 239);
+  --primary-color-darker: rgb(9, 48, 56);
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--primary-color);
+  font-family: 'Open sans', sans-serif;
+  font-size: 15px;
+  line-height: 1em;
+background: radial-gradient(circle at 50% 50%, #11b6e6, #115666, #093038, #11b6e6, #115666, #093038);
+background-size: 200% 200%;
+animation: gradient-move 6s linear infinite;
+}
+
+@keyframes gradient-move {
+    0% {
+        background-position: left;
+    }
+    100% {
+        background-position: right;
+    }
+}
+.container {
+  max-width: 340px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px 30px 10px 30px;
+  box-shadow: 1px 3px 23px 3px black;
+}
+h1{
+    text-align: center;
+}
+
+form input, form label, form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+form input {
+  font-size: 14px;
+  height: 36px;
+  padding: 10px;
+}
+
+form input:focus {
+  outline: 1px solid var(--primary-color);
+}
+
+form button {
+  border: none;
+  background: var(--primary-color);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  height: 40px;
+  cursor: pointer;
+  margin-top: 30px;
+  width: 150px;
+  border-radius: 10px 30px ;
+}
+
+form button:hover {
+  background: var(--primary-color-darker);
+}
+.error-text {
+  font-size: 12px;
+  color: red;
+}
